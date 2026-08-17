@@ -1,7 +1,7 @@
 // 完全基于原HTML逻辑的Cloudflare Worker实现
 // 配置信息
 const APP_CONFIG = {
-  title: '云音乐 - 在线音乐播放器',
+  title: 'QHC Music',
   version: '2.1.2',
   apiBase: 'https://music-api.gdstudio.xyz/api.php'
 };
@@ -25,7 +25,7 @@ const BASE_HTML = `<!DOCTYPE html>
         <div class="nav-container">
             <div class="logo">
                 <i class="fas fa-music"></i>
-                <span>云音乐</span>
+                <span>QHC Music</span>
             </div>
             
             <div class="search-container">
@@ -3214,7 +3214,7 @@ function getJS() {
             initPageDisplay();
             updateSavedPlaylistTabs(); // 初始化保存的歌单
             setTimeout(() => {
-                showNotification('欢迎使用云音乐播放器！', 'success');
+                showNotification('欢迎使用QHC Music！', 'success');
                 // 在移动端显示滑动提示
                 if (window.innerWidth <= 768) {
                     setTimeout(() => {
